@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({
 	extended:true
 }));
 
-app.get("/", function(req, res) {
+app.get("/cal", function(req, res) {
 res.sendFile(__dirname + "/app.html");
 });
 
