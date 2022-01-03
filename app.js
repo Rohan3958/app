@@ -6,8 +6,8 @@ app.use(bodyParser.urlencoded({
 	extended:true
 }));
 
-app.get("/", function(req, res) {
-res.sendFile(__dirname + "/caal.html");
+app.get("/app", function(req, res) {
+res.sendFile(__dirname + "/app.html");
 });
 
 app.post("/", function(req, res) {
@@ -18,7 +18,7 @@ var result = num1 + num2 ;
 	
 res.send("Addition - " + result);
 });
-app.listen(port,(res,req)=>{
+app.listen(port,(res,req)=> {
 console.log(`Server ${port}`)
 });
 
