@@ -1,12 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser")
-const port = process.env.port || 2525
+var port = process.env.port || 2525
 const app = express();
 app.use(bodyParser.urlencoded({
 	extended:true
 }));
 
-app.get("/app", function(req, res) {
+app.get("/", function(req, res) {
 res.sendFile(__dirname + "/app.html");
 });
 
