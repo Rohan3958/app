@@ -17,8 +17,7 @@ var num2 = Number(req.body.num2);
 var result = num1 + num2 ;
 	
 res.send("Addition - " + result);
-});
-app.listen(port,(res,req)=> {
+}).listen(port,(res,req)=> {
 console.log(`Server ${port}`)
 });
 
